@@ -3,107 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aantay Electronics - Book Consultation</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico">
+    <title>Private University - Campus Visit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
     <header>
-        <h1>Aantay Electronics</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Private University Logo">
+            <h1>Private University</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Products</a></li>
-                <li><a href="booking.html">Book Consultation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Campus Visit</a></li>
                 <li><a href="help.html">Help</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <h2>Book a Product Consultation</h2>
-        
-        <form class="booking-form">
+        <h2>Campus Visit Booking</h2>
+        <form id="visit-form">
             <fieldset>
                 <legend>Personal Information</legend>
                 <div class="form-group">
                     <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
                 </div>
                 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
                 </div>
             </fieldset>
-            
+
             <fieldset>
-                <legend>Product Interest</legend>
+                <legend>Academic Interests</legend>
                 <div class="form-group">
-                    <label for="product">Product Category:</label>
-                    <select id="product" name="product" required>
-                        <option value="">Select a product</option>
-                        <option value="smartphone">Smartphone</option>
-                        <option value="laptop">Laptop</option>
-                        <option value="desktop">Desktop Computer</option>
-                        <option value="accessory">Accessories</option>
+                    <label for="major">Intended Major:</label>
+                    <select id="major" name="major" required>
+                        <option value="">Select a major</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="eng">Engineering</option>
+                        <option value="bus">Business</option>
+                        <option value="art">Arts</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
-                    <label>Preferred Contact Method:</label>
-                    <div class="radio-group">
-                        <input type="radio" id="contact-email" name="contact" value="email" checked>
-                        <label for="contact-email">Email</label>
-                        
-                        <input type="radio" id="contact-phone" name="contact" value="phone">
-                        <label for="contact-phone">Phone</label>
-                        
-                        <input type="radio" id="contact-whatsapp" name="contact" value="whatsapp">
-                        <label for="contact-whatsapp">WhatsApp</label>
-                    </div>
-                </div>
-            </fieldset>
-            
-            <fieldset>
-                <legend>Additional Information</legend>
-                <div class="form-group">
-                    <label>Accessories Needed (select all that apply):</label>
+                    <label>Interests:</label>
                     <div class="checkbox-group">
-                        <input type="checkbox" id="case" name="accessories" value="case">
-                        <label for="case">Protective Case</label>
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports Facilities</label>
                         
-                        <input type="checkbox" id="screen-protector" name="accessories" value="screen-protector">
-                        <label for="screen-protector">Screen Protector</label>
+                        <input type="checkbox" id="library" name="interests" value="library">
+                        <label for="library">Library Tour</label>
                         
-                        <input type="checkbox" id="charger" name="accessories" value="charger">
-                        <label for="charger">Extra Charger</label>
+                        <input type="checkbox" id="labs" name="interests" value="labs">
+                        <label for="labs">Computer Labs</label>
                     </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="date">Preferred Consultation Date:</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="comments">Special Requests:</label>
-                    <textarea id="comments" name="comments" rows="4" placeholder="Any specific requirements or questions"></textarea>
-                </div>
             </fieldset>
-            
-            <button type="submit">Submit Booking Request</button>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any special requests..."></textarea>
+            </div>
+
+            <button type="submit">Submit Booking</button>
         </form>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 Aantay Electronics | Student Project for Jamburiya University</p>
+        <p>&copy; 2025 Private University. All rights reserved.</p>
     </footer>
 </body>
 </html>
