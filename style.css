@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #260101;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background-color: #732C02;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+h2 {
+  margin-top: 5px;
+  color: #fff8e1;
+}
+
+main {
+  padding: 40px 20px 80px 20px;
+}
+
+.button-container, .chapter-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 25px;   
+  row-gap: 50px;      
+  margin-top: 25px;
+}
+
+button {
+  padding: 10px 15px;
+  border: 2px solid #F28705;
+  border-radius: 6px;
+  background-color: white;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F28705;
+  color: white;
+}
+
+footer {
+  background-color: #732C02;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #F28705;
+}
+
+.chapter-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Chapter 6 layout adjustment */
+#chapter6 button:nth-child(9) {
+  margin-top: 25px;  
+}
+
+
+#chapter7 {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 25px;
+}
