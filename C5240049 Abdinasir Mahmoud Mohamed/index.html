@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Java Script</h1>
+    <h2>Choose a Chapter</h2>
+  </header>
+
+  <main>
+    <div id="mainMenu" class="button-container">
+      <button onclick="showSection('chapter2')">Chapter 2</button>
+      <button onclick="showSection('chapter3')">Chapter 3</button>
+      <button onclick="showSection('chapter4')">Chapter 4</button>
+      <button onclick="showSection('chapter5')">Chapter 5</button>
+      <button onclick="showSection('chapter6')">Chapter 6</button>
+      <button onclick="showSection('chapter7')">Chapter 7</button>
+      <button onclick="showSection('chapter8')">Chapter 8</button>
+      <button onclick="showSection('chapter9')">Chapter 9</button>
+      <button onclick="showSection('assignments')">All Assignments</button>
+    </div>
+
+    <div id="chapter2" class="chapter-section">
+      <h3>Chapter 2: Operators</h3>
+      <button onclick="arithmeticExample()">Arithmetic Operators</button>
+      <button onclick="relationalExample()">Relational Operators</button>
+      <button onclick="logicalExample()">Logical Operators</button>
+      <button onclick="incDecExample()">Increment & Decrement</button>
+      <button onclick="typeOfExample()">typeof Operator</button>
+      <button onclick="goBack()">Back</button>
+    </div>
+
+    <div id="chapter3" class="chapter-section">
+      <h3>Chapter 3: Conditional Statements</h3>
+      <button onclick="ifElseExample()">If-Else Example</button>
+      <button onclick="switchExample()">Switch Example</button>
+      <button onclick="goBack()">Back</button>
+    </div>
+
+    <div id="chapter4" class="chapter-section">
+      <h3>Chapter 4: Loops</h3>
+      <button onclick="forLoopExample()">For Loop</button>
+      <button onclick="whileLoopExample()">While Loop</button>
+      <button onclick="doWhileExample()">Do-While Loop</button>
+      <button onclick="breakLoop()">Break Example</button>
+      <button onclick="continueLoop()">Continue Example</button>
+      <button onclick="goBack()">Back</button>
+    </div>
+
+
+    <div id="chapter5" class="chapter-section">
+      <h3>Chapter 5: Functions</h3>
+      <button onclick="simpleFunction()">Simple Function</button>
+      <button onclick="addNumbers()">Function with Parameters</button>
+      <button onclick="exampleFunctionDeclaration()">Example of Function Declaration</button>
+      <button onclick="exampleFunctionExpression()">Example of Function Expression</button>
+      <button onclick="exampleArrowFunction()">Example of Arrow Function</button>
+      <button onclick="goBack()">Back</button>
+    </div>
+
+<div id="chapter6" class="chapter-section">
+  <h3>Chapter 6: Arrays</h3>
+  <button onclick="createArray()">Create Array</button>
+  <button onclick="arrayLoopExample()">Loop Through Array</button>
+  <button onclick="arrayConstructor()">Array Constructor</button>
+  <button onclick="arrayAccessUpdate()">Access & Update Elements</button>
+  <button onclick="arrayAddRemove()">Add & Remove Elements</button>
+  <button onclick="arraySpliceSlice()">Splice & Slice Example</button>
+  <button onclick="arrayConcat()">Concat Arrays</button>
+  <button onclick="arrayForOf()">for...of Loop Example</button>
+  <button onclick="arrayForEach()">forEach Example</button>
+  <button onclick="arrayMap()">map() Example</button>
+  <button onclick="arrayFilter()">filter() Example</button>
+  <button onclick="arrayReduce()">reduce() Example</button>
+  <button onclick="arraySearch()">Search Example</button>
+  <button onclick="multiArray()">Multidimensional Array</button>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<div id="chapter7" class="chapter-section">
+  <h3>Chapter 7: Objects</h3>
+  <button onclick="objectLiteralExample()">Object Literal</button>
+  <button onclick="constructorFunctionExample()">Constructor Function</button>
+  <button onclick="classSyntaxExample()">Class Syntax</button>
+  <button onclick="objectAccessExample()">Access Properties</button>
+  <button onclick="objectModifyExample()">Modify Properties</button>
+  <button onclick="objectAddProperty()">Add New Properties</button>
+  <button onclick="objectMethodExample()">Methods in Object</button>
+  <button onclick="objectForInExample()">for...in Loop</button>
+  <button onclick="objectKeysExample()">Object.keys()</button>
+  <button onclick="objectValuesExample()">Object.values()</button>
+  <button onclick="objectEntriesExample()">Object.entries()</button>
+  <button onclick="jsonStringifyExample()">JSON.stringify()</button>
+  <button onclick="jsonParseExample()">JSON.parse()</button>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<div id="chapter8" class="chapter-section">
+  <h3>Chapter 8: Selecting Document Element</h3>
+  <button onclick="getByIdExample()">getElementById()</button>
+  <button onclick="getByTagExample()">getElementsByTagName()</button>
+  <button onclick="getByClassExample()">getElementsByClassName()</button>
+  <button onclick="querySelectorExample()">querySelector()</button>
+  <button onclick="querySelectorAllExample()">querySelectorAll()</button>
+  <button onclick="goBack()">Back</button>
+</div>
+
+<div id="chapter9" class="chapter-section">
+    <h3>Chapter 9: JavaScript Events</h3>
+    <button onclick="clickEventExample()">Click Event</button>
+    <button onclick="mouseEventExample()">Mouse Over / Out</button>
+    <button onclick="keyboardEventExample()">Keyboard Event</button>
+    <button onclick="focusEventExample()">Focus & Blur</button>
+    <button onclick="loadEventExample()">Page Load Event</button>
+    <button onclick="goBack()">Back</button>
+</div>
+
+    <div id="assignments" class="chapter-section">
+      <h3>All Assignments</h3>
+      <button onclick="assignmentMarks()">1 Subject No Error</button>
+      <button onclick="assignmentConditional()">Conditional Statements</button>
+      <button onclick="assignmentLogical()">Logical Operators</button>
+      <button onclick="assignmentSwitch()">Switch Case</button>
+      <button onclick="assignmentTenStudents()">10 Students Object in For Loop</button>
+      <button onclick="goBack()">Back</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Abdinasir Mahmoud Mohamed</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
